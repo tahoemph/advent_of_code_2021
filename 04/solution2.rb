@@ -1,5 +1,3 @@
-require 'pry'
-
 def get_board(lines)
 	board = []
 	lines.each do |line|
