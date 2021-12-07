@@ -4,7 +4,7 @@ min_pos = input.min
 max_pos = input.max
 
 data = (min_pos..max_pos).map do |pos|
-	fuel_usage = input.map do |x|
+	input.map do |x|
 		(1..(pos - x).abs).sum
 	end.sum
 end
