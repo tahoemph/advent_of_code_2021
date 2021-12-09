@@ -56,11 +56,9 @@ end
 basins = []
 (0..MAX_X - 1).each do |x|
     (0..MAX_Y - 1).each do |y|
-        puts "#{y} #{x}"
         next if low_point_map[y][x].zero?
         next if already_in_basin?(basins, x, y)
         basins << build_basin(input, x, y, [])
-        puts "done #{x} #{y}"
     end
 end
 
